@@ -1,0 +1,222 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right,#9a1d86, #1595be);
+}
+.container
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper
+{
+    height: auto;
+    width: 50vw;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 15px #000;
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+.playingdetails
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#y{
+ margin-left: 10px;
+}
+#x
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.playingdetails h5{
+    color: #fff;
+    font-weight: bold;
+
+}
+.playingdetails img
+{
+    padding: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    animation: rotate 1s infinite;
+    height: 150px;
+    width: 150px;
+}
+.playingdetails h4{
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+.playingdetails marquee
+{
+    font-size: 1.5rem;
+    color: rgb(6, 255, 27);
+    margin-top: 10px;
+}
+@keyframes rotate
+{
+    0%{
+        background-color: aqua;
+        box-shadow: 15px 25px 20px red,-15px -15px 20px red;
+    }
+    10%{
+        background-color: #83A9FF;
+        box-shadow: 5px 5px 20px yellow,-5px -5px 20px yellow;
+    }
+    20%
+    {
+        background-color: aquamarine;
+        box-shadow: 5px 5px 20px green,-5px -5px 20px green;
+    }
+    30%{
+        background-color: bisque;
+        box-shadow: 5px 5px 20px #555d50,-5px -5px 20px #000;
+    }
+    40%
+    {
+        background-color: brown;
+        box-shadow: 15px 5px 20px darkgreen,-5px -5px 20px #666362;
+    }
+    50%{
+        background-color: #fd0000;
+        box-shadow: 5px 5px 20px purple,-5px -5px 20px deeppink;
+    }
+    60%{
+        background-color: chartreuse;
+        box-shadow: 5px 5px 20px darkred,-5px -15px 20px blue;
+    }
+    70%{
+        background-color: deeppink;
+        box-shadow: 5px 15px 20px crimson,-5px -5px 20px peru;
+    }
+    80%{
+        background-color: gold;
+        box-shadow: 5px 5px 20px violet,-5px -5px 20px blue;
+    }
+    90%{
+        background-color: hotpink;
+        box-shadow: 5px 5px 20px peru,-5px -15px 20px greenyellow;
+    }
+    100%{
+        background-color: #4300fd;
+        box-shadow: 15px 5px 20px blueviolet,-5px -5px 20px aqua;
+    }
+}
+.rangecontainer h5
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.rangecontainer h4
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.rangecontainer span
+{
+    color: #fff;
+    font-size: 1rem;
+}
+.rangecontainer i
+{
+    color: #fff;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+.rangecontainer i:hover
+{
+    color: rgb(250, 127, 82);
+    border-color: rgb(250, 111, 61);
+}
+.rangecontainer #range
+{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    width: 70%;
+    border-radius: 5px;
+    background: #83A9FF;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.rangecontainer #sound
+{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    width: 50%;
+    border-radius: 5px;
+    background: #fd00f1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.control
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.control button
+{
+    margin-top: 10px;
+    border-radius: 50%;
+    text-align: center;
+    background: transparent;
+    border: none;
+    color: aqua;
+    font-size: 1rem;
+}
+.control button:hover
+{
+    color: #fd0000;
+}
+.repeatsound
+{
+    color: gold;
+    font-size: 2rem;
+}
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        max-width: none; 
+    }
+
+    .rangecontainer #range,
+    .rangecontainer #sound {
+        width: 90%;
+        max-width: none; 
+    }
+   
+.playingdetails img
+{
+    padding: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    animation: rotate 1s infinite;
+    height: 100px;
+    width: 100px;
+}
+}
+
+
+
+
+

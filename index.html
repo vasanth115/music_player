@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="index.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+         <div class="wrapper">
+            <div class="playingdetails">
+                <h5>Playing Music <span id="x">ㅤ</span>Of   <span id="y">ㅤ</span></h5>
+                <img src="" alt="" id="image">
+                <h4 id="trackartist">ㅤ</h4>
+                <marquee  direction="" id="audiotrack">ㅤ</marquee>
+            </div>
+            <div class="rangecontainer">
+                <h5><span id="currenttiming"> 0.00</span><input type="range" id="range" min="0" max="100" value="0" onchange="toseek()"> <span id="endtime">ㅤ</span></h5>
+                <h4><i class='bx bx-volume-mute' onclick="mute()"></i> <input type="range" name="" id="sound" min="0" max="100" value="50" onchange="vol()"> <i class='bx bxs-volume-full' onclick="max()"></i></h4>
+            </div>
+            <div class="control">
+                <button onclick="share()"><i class='bx bx-share-alt'></i></button>
+                <button onclick="forward()"> <i class="fa fa-step-backward fa-2x"></i></button>
+                <button id="playbtn" onclick="playpause()" > <i class="fa fa-play-circle fa-5x"></i></button>
+                <button onclick="nextsong()"> <i class="fa fa-step-forward fa-2x"></i></button>
+                <button onclick="repeat()" id="r"> <i class="fa fa-repeat fa-2x" title="repeat" ></i></button>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
